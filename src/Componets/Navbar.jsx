@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FaSearch } from "react-icons/fa";
 
 const navbarData = [
   {
@@ -35,9 +35,60 @@ const navbarData = [
     ],
   },
   {
-    label: "Secutity",
+    label: "Industris",
     dropdown: [
       { label: "Email Us", link: "#" },
+      { label: "Support Center", link: "#" },
+      { label: "FAQs", link: "#" },
+    ],
+  },
+ {
+    label: "On-Demand Developer",
+    dropdown: [ ],
+  },,
+  {
+    label: "Technologies",
+    dropdown: [
+      { label: "Email Us", link: "#" },
+      { label: "Support Center", link: "#" },
+      { label: "FAQs", link: "#" },
+    ],
+  },
+  {
+    label: "Success Stories",
+    dropdown: [
+      { label: "Email Us", link: "#" },
+      { label: "Support Center", link: "#" },
+      { label: "FAQs", link: "#" },
+    ],
+  },
+  {
+    label:   <svg
+    className="w-5 h-5"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 17 14"
+  >
+    <path
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M1 1h15M1 7h15M1 13h15"
+    />
+  </svg>,
+    dropdown: [
+      { label: "Emdddddail Us", link: "#" },
+      { label: "Support Center", link: "#" },
+      { label: "FAQs", link: "#" },
+    ],
+  },
+  {
+    label:  <FaSearch />,
+
+    dropdown: [
+      { label: "Emdddddail Us", link: "#" },
       { label: "Support Center", link: "#" },
       { label: "FAQs", link: "#" },
     ],
@@ -46,15 +97,47 @@ const navbarData = [
 
 function Navbar() {
   return (
-    <nav className="bg-black border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+    <nav className="bg-black border-gray-200 dark:bg-gray-900 sticky top-0 z-50">
+    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pt-2">
         <a href="https://flowbite.com/" className="flex items-center rtl:space-x-reverse">
+       
         
         </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0">
           <button
             type="button"
-            className="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+       <span className='text-orange-700'>IND</span>  (+91) 99999 99999
+          </button>
+          <button
+            type="button"
+            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+       <span className='text-orange-700'>IND</span>  (+91) 99999 99999
+          </button>
+            <button
+            type="button"
+            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+       <span className='text-orange-700'>IND</span>  (+91) 99999 99999
+          </button>
+        </div>
+     
+      </div>
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <a href="https://flowbite.com/" className="flex items-center rtl:space-x-reverse">
+       <img
+            src="https://www.dakshinfo.com/images/welcomelogo.svg"
+            className="h-6"
+            alt="Flowbite Logo"
+          />
+        
+        </a>
+        <div className="flex md:order-2 space-x-3 md:space-x-0">
+          <button
+            type="button"
+            className="text-white bg-yellow-600 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Contact Us
           </button>
@@ -92,7 +175,7 @@ function Navbar() {
               <li className="relative group" key={menu.label}>
                 <p
                 
-                  className="block m-0 py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 hover:text-yellow-500 md:text-white  flex items-center"
+                  className="block m-0 py- px-2 md:p-0  text-s rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-500 hover:text-yellow-500 md:text-white  flex items-center"
                 >
                   <span>{menu.label}</span>
                   <svg
@@ -110,19 +193,24 @@ function Navbar() {
                     />
                   </svg>
                 </p>
-                <ul className="absolute hidden group-hover:block bg-gray-800 dark:bg-gray-800 text-white dark:text-white mt-1 w-48 shadow-md rounded">
+                <ul className="absolute hidden p-4 group-hover:block bg-gray-800 dark:bg-gray-800 text-white dark:text-white mt-3 w-48 shadow-md rounded-b-[52px]">
                   {menu.dropdown.map((item) => (
                     <li
-                      className="px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+                      className=" hover:bg-gray-800 dark:hover:bg-gray-700"
                       key={item.label}
                     >
                       <p href={item.link}>{item.label}</p>
                     </li>
                   ))}
+                  
                 </ul>
+                
               </li>
             ))}
           </ul>
+          <button className='text-white'>
+        
+          </button>
         </div>
       </div>
     </nav>

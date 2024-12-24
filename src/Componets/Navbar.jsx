@@ -11,7 +11,7 @@ const navbarData = [
     ],
   },
   {
-    label: "About",
+    label: "Cloud",
     dropdown: [
       { label: "Company Info", link: "#" },
       { label: "Our Team", link: "#" },
@@ -19,7 +19,7 @@ const navbarData = [
     ],
   },
   {
-    label: "Services",
+    label: "Data & AI",
     dropdown: [
       { label: "Web Development", link: "#" },
       { label: "Mobile Apps", link: "#" },
@@ -27,7 +27,15 @@ const navbarData = [
     ],
   },
   {
-    label: "Contact",
+    label: "Secutity",
+    dropdown: [
+      { label: "Email Us", link: "#" },
+      { label: "Support Center", link: "#" },
+      { label: "FAQs", link: "#" },
+    ],
+  },
+  {
+    label: "Secutity",
     dropdown: [
       { label: "Email Us", link: "#" },
       { label: "Support Center", link: "#" },
@@ -84,7 +92,7 @@ function Navbar() {
               <li className="relative group" key={menu.label}>
                 <p
                 
-                  className="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 hover:text-yellow-500 md:text-white  flex items-center"
+                  className="block m-0 py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-yellow-700 hover:text-yellow-500 md:text-white  flex items-center"
                 >
                   <span>{menu.label}</span>
                   <svg

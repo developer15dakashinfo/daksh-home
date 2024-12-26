@@ -110,16 +110,19 @@ const HomeBanner = () => {
               {[
                 { title: "Software Development", icon: <LuSquareTerminal /> },
                 { title: "Apps Development", icon: <MdAppBlocking /> },
-                { title: "Web Development", icon: <FaDesktop />},
-                { title: "E-Commerce Services", icon: <MdOutlineShoppingCart /> },
+                { title: "Web Development", icon: <FaDesktop /> },
+                {
+                  title: "E-Commerce Services",
+                  icon: <MdOutlineShoppingCart />,
+                },
                 { title: "Cloud Solutions", icon: <TbCloudExclamation /> },
-                { title: "Hubspot", icon:<FaHubspot /> },
-                { title: "Zoho Solutions", icon:<SiZoho /> },
+                { title: "Hubspot", icon: <FaHubspot /> },
+                { title: "Zoho Solutions", icon: <SiZoho /> },
                 { title: "Salesforce Solutions", icon: <IoIosCloudDone /> },
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-center border-2 border-white text-white rounded-full py-3 px-10 hover:bg-white hover:text-black hover:scale-105 transition duration-300 ease-in-out"
+                  className="flex items-center justify-center border-2 border-white text-white rounded-full py-3 px-10 hover:bg-white hover:text-black hover:scale-105 transition duration-200 ease-in-out"
                 >
                   <div className="flex items-center space-x-2 group">
                     <span className="text-2xl group-hover:text-black">

@@ -120,7 +120,7 @@ const Home5 = ({ id, image }) => {
         </div>
       </div>
 
-      <div className="mt-12 items-center justify-center text-center pb-12">
+      <div className="mt-10 items-center justify-center text-center py-5">
           <button className="border border-white text-white text-lg sm:text-xl py-3 px-8 sm:px-8 rounded-lg font-semibold hover:bg-orange-600 transition">
           Book a FREE Consultation  → 
           </button>

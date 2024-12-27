@@ -83,8 +83,8 @@ function Home3() {
 
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-      <h1 className="text-blue-400 font- text-lg text-center mt-10">
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-6 md:p-16">
+      <h1 className="text-blue-400 font-text-lg text-center  sm:mt-2">
       Services
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3">

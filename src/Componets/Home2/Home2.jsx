@@ -32,13 +32,13 @@ export default function Home2() {
 
   return (
     <>
-      <div className="flex justify-center">
-      <h1 className="text-xl sm:text-2xl font-bold text-center mt-6 sm:mt-20 flex flex-wrap justify-center">
+      <div className="flex justify-center pb-10 ">
+      <h1 className="text-2xl sm:text-3xl font-bold text-center mt-6 sm:mt-20 flex flex-wrap justify-center">
       Partnered with Startups and
       <span className="text-blue-400 px-2">Fortune 500</span> Companies!
     </h1>
       </div>
-      <div className="glide-09 relative w-full overflow-hidden sm:pt-20">
+      <div className="glide-09 relative w-full overflow-hidden">
         {/* <!-- Slides --> */}
         <div data-glide-el="track">
           <ul className="whitespace-no-wrap gap-4 flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">

@@ -47,54 +47,55 @@ const Home8 = () => {
 
   return (
     <div className="w-full bg-white pb-20">
-      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-blue-400  font-medium text-lg text-center">
-        SOLUTIONS FOR ALL
-        </h1>
-        <h1 className="text-4xl font-bold text-center mt-3 text-black">
-        Leading the Industry with Excellence
-        </h1>
-        <p className="text-lg text-center mt-4 text-black">
-        dakshInfo Soft craft transformative software solutions to empower businesses of all sizes. We equip you with the tools to streamline operations, achieve results, and propel growth.
-        </p>
-      </div>
+  <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+    <h1 className="text-blue-400 font-medium text-lg text-center">
+      SOLUTIONS FOR ALL
+    </h1>
+    <h1 className="text-4xl font-bold text-center mt-3 text-black">
+      Leading the Industry with Excellence
+    </h1>
+    <p className="text-lg text-center mt-4 text-black">
+      dakshInfo Soft craft transformative software solutions to empower businesses of all sizes. We equip you with the tools to streamline operations, achieve results, and propel growth.
+    </p>
+  </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-40">
-        {cardsData2.map((card, index) => (
-          <div
-            key={index}
-            className="relative h-full overflow-hidden border border-gray-500 rounded-lg hover:shadow-lg transition duration-300"
-          >
-            <div className="p-8">
-              <div className="flex items-center gap-4">
-                <div className="text-2xl text-blue-400 ">{card.icon}</div>
-                <h3 className="text-xl font-bold text-black">{card.title}</h3>
-              </div>
-
-              <p className="text-sm font-medium text-black pt-3">{card.description}</p>
-
-              {card.lists && (
-                <ul className="text-gray-600 list-none p-0 m-0 ">
-                  {Object.values(card.lists).map((listItem, listIndex) => (
-                    <li
-                      key={listIndex}
-                      className="flex items-center gap-2 text-[13px] text-gray-500 py-1 text-justify "
-                    >
-                      <IoIosArrowForward className="text-blue-400  text-2xl" />
-                      {listItem}
-                    </li>
-                  ))}
-                </ul>
-              )}
-
-              <div className=" bottom-4 font-bold flex items-center gap-2 text-black py-2">
-                Explore more <FaArrowCircleRight />
-              </div>
-            </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10  sm:px-8 lg:px-40">
+    {cardsData2.map((card, index) => (
+      <div
+        key={index}
+        className="relative h-full overflow-hidden border border-gray-500 rounded-lg hover:shadow-lg transition duration-300"
+      >
+        <div className="p-6 sm:p-8 lg:p-8">
+          <div className="flex items-center gap-4">
+            <div className="text-3xl text-blue-400">{card.icon}</div>
+            <h3 className="text-lg sm:text-xl font-bold text-black">{card.title}</h3>
           </div>
-        ))}
+
+          <p className="text-sm sm:text-base font-medium text-black pt-3">{card.description}</p>
+
+          {card.lists && (
+            <ul className="text-gray-600 list-none p-0 m-0">
+              {Object.values(card.lists).map((listItem, listIndex) => (
+                <li
+                  key={listIndex}
+                  className="flex items-center gap-2 text-[13px] sm:text-sm text-gray-500 py-1 text-justify"
+                >
+                  <IoIosArrowForward className="text-blue-400 text-xl" />
+                  {listItem}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div className="bottom-4 font-bold flex items-center gap-2 text-black py-2">
+            Explore more <FaArrowCircleRight />
+          </div>
+        </div>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
   );
 };
 

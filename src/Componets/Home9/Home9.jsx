@@ -124,7 +124,7 @@ const Home9 = () => {
   return (
     // <div className="w-full bg-black pb-20">
     //   <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-    //     <h1 className="text-orange-500 font-medium text-lg text-center">
+    //     <h1 className="text-blue-400 font-medium text-lg text-center">
     //       CASE STUDIES
     //     </h1>
     //     <h1 className="text-4xl font-bold text-center mt-3 text-white">
@@ -139,82 +139,101 @@ const Home9 = () => {
     //     {caseStudyCards.map((card, index) => (
     //       <div
     //         key={index}
-    //         className="rounded-lg overflow-hidden flex flex-col relative bg-gradient-to-r from-indigo-500 "
+    //         className="relative rounded-lg overflow-hidden flex flex-col bg-gradient-to-r from-indigo-500"
     //       >
     //         <img
-    //           className="w-full h-full object-cover bg-gradient-to-r from-indigo-500"
+    //           className="w-full h-52 object-cover"
     //           src={card.image}
     //           alt={card.title}
     //         />
+    //         <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/70 to-gray-400 opacity-70"></div>
 
-    //         <div className="absolute top-6 left-4 flex items-center gap-2 text-orange-500 text-sm font-medium">
-    //           {card.icon} {card.title}
+    //         <div className="absolute top-6 left-4 flex items-center gap-2 text-blue-400 text-sm font-semibold z-10">
+    //           {card.title}
     //         </div>
-    //         <div className="absolute top-12 left-4 text-sm font-semibold text-white">
+    //         <div className="absolute top-12 left-4 text-sm font-semibold text-white z-10">
     //           {card.description}
     //         </div>
-    //         <div className="absolute bottom-4 left-4 text-lg flex items-center gap-2 text-orange-500">
-
-    //         </div>
+    //         {card.logos && (
+    //           <div className="absolute bottom-4 left-4 flex items-center gap-4 z-10">
+    //             {card.logos.map((logo, logoIndex) => (
+    //               <div key={logoIndex} className="flex items-center gap-2">
+    //                 <div className="w-6 h-6 rounded-full overflow-hidden border-2 border-white">
+    //                   <img
+    //                     className="w-full h-full object-cover"
+    //                     src={logo.image}
+    //                     alt={logo.text}
+    //                   />
+    //                 </div>
+    //                 <span className="text-sm font-bold text-white">
+    //                   {logo.text}
+    //                 </span>
+    //               </div>
+    //             ))}
+    //             </div>
+    //         )}
     //       </div>
     //     ))}
     //   </div>
     // </div>
 
     <div className="w-full bg-black pb-20">
-      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-blue-400 font-medium text-lg text-center">
-          CASE STUDIES
-        </h1>
-        <h1 className="text-4xl font-bold text-center mt-3 text-white">
-          Read Our Client Success Stories
-        </h1>
-        <p className="text-lg text-center mt-4 text-white">
-          Grow your business with a team that wants to see you win
-        </p>
-      </div>
+  <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+    <h1 className="text-blue-400 font-medium text-lg text-center">
+      CASE STUDIES
+    </h1>
+    <h1 className="text-4xl font-bold text-center mt-3 text-white">
+      Read Our Client Success Stories
+    </h1>
+    <p className="text-lg text-center mt-4 text-white">
+      Grow your business with a team that wants to see you win
+    </p>
+  </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-40">
-        {caseStudyCards.map((card, index) => (
-          <div
-            key={index}
-            className="relative rounded-lg overflow-hidden flex flex-col bg-gradient-to-r from-indigo-500"
-          >
-            <img
-              className="w-full h-52 object-cover"
-              src={card.image}
-              alt={card.title}
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/70 to-gray-400 opacity-70"></div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-10 sm:px-12 lg:px-40">
+    {caseStudyCards.map((card, index) => (
+      <div
+        key={index}
+        className="relative rounded-lg overflow-hidden flex flex-col bg-gradient-to-r from-indigo-500"
+      >
+        <img
+          className="w-full h-52 sm:h-64 md:h-60 object-cover"
+          src={card.image}
+          alt={card.title}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/70 to-gray-400 opacity-70"></div>
 
-            <div className="absolute top-6 left-4 flex items-center gap-2 text-blue-400 text-sm font-semibold z-10">
-              {card.title}
-            </div>
-            <div className="absolute top-12 left-4 text-sm font-semibold text-white z-10">
-              {card.description}
-            </div>
-            {card.logos && (
-              <div className="absolute bottom-4 left-4 flex items-center gap-4 z-10">
-                {card.logos.map((logo, logoIndex) => (
-                  <div key={logoIndex} className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full overflow-hidden border-2 border-white">
-                      <img
-                        className="w-full h-full object-cover"
-                        src={logo.image}
-                        alt={logo.text}
-                      />
-                    </div>
-                    <span className="text-sm font-bold text-white">
-                      {logo.text}
-                    </span>
-                  </div>
-                ))}
+        <div className="absolute top-6 left-4 flex items-center gap-2 text-blue-400 text-sm font-semibold z-10">
+          {card.title}
+        </div>
+        <div className="absolute top-12 left-4 text-sm sm:text-base font-semibold text-white z-10">
+          {card.description}
+        </div>
+        
+        {card.logos && (
+          <div className="absolute bottom-4 left-4 flex items-center gap-4 z-10">
+            {card.logos.map((logo, logoIndex) => (
+              <div key={logoIndex} className="flex items-center gap-2">
+                <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full overflow-hidden border-2 border-white">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={logo.image}
+                    alt={logo.text}
+                  />
                 </div>
-            )}
+                <span className="text-sm sm:text-base font-bold text-white">
+                  {logo.text}
+                </span>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+
+
   );
 };
 

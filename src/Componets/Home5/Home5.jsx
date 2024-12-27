@@ -69,7 +69,7 @@ const Home5 = ({ id, image }) => {
   return (
     <div className="w-full bg-black">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 ">
-        <h1 className="text-orange-500 font- text-lg text-center">
+        <h1 className="text-blue-400 font- text-lg text-center">
           TECHNOLOGIES
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-white">

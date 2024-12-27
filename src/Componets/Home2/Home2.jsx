@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import Glide from "@glidejs/glide"
+import React, { useEffect } from "react";
+import Glide from "@glidejs/glide";
 
 export default function Home2() {
   useEffect(() => {
@@ -23,17 +23,22 @@ export default function Home2() {
           gap: 36,
         },
       },
-    }).mount()
+    }).mount();
 
     return () => {
-      slider.destroy()
-    }
-  }, [])
+      slider.destroy();
+    };
+  }, []);
 
   return (
     <>
-   <div className="flex justify-content-center"> <h1 className="text-2xl font-bold text-center mt-10 flex">Partnered with Startups and <p className="text-orange-500 px-2">Fortune 500</p> Companies!</h1></div>
-      <div className="glide-09 relative w-full overflow-hidden">
+      <div className="flex justify-center">
+      <h1 className="text-xl sm:text-2xl font-bold text-center mt-6 sm:mt-20 flex flex-wrap justify-center">
+      Partnered with Startups and
+      <span className="text-blue-400 px-2">Fortune 500</span> Companies!
+    </h1>
+      </div>
+      <div className="glide-09 relative w-full overflow-hidden sm:pt-20">
         {/* <!-- Slides --> */}
         <div data-glide-el="track">
           <ul className="whitespace-no-wrap gap-4 flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
@@ -78,5 +83,5 @@ export default function Home2() {
       </div>
       {/*<!-- End Testimonial carousel --> */}
     </>
-  )
+  );
 }

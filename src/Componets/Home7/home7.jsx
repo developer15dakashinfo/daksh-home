@@ -35,7 +35,7 @@ const home7 = () => {
   return (
     <div className="w-full bg-white">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-orange-500 font-medium text-lg text-center ">
+        <h1 className="text-blue-400 font-medium text-lg text-center ">
           INDUSTRIES WE SERVE
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-black">
@@ -59,7 +59,7 @@ const home7 = () => {
               alt={card.title}
             />
             <div className="absolute inset-0 bg-gray-900 bg-opacity-25 group-hover:bg-opacity-50 transition duration-300"></div>
-            <div className="absolute top-64 left-2 text-lg font-bold flex items-center gap-2 text-orange-500 transition-transform duration-500 group-hover:translate-y-[-110px]">
+            <div className="absolute top-64 left-2 text-lg font-bold flex items-center gap-2 text-blue-400  transition-transform duration-500 group-hover:translate-y-[-110px]">
               <MdOutlineHorizontalRule className="text-6xl" />
             </div>
 
@@ -71,7 +71,7 @@ const home7 = () => {
               {card.description}
             </div>
 
-            <div className="absolute bottom-[-60px] left-4 text-lg flex items-center gap-2 text-orange-500 transition-transform duration-500 group-hover:translate-y-[-80px]">
+            <div className="absolute bottom-[-60px] left-4 text-lg flex items-center gap-2 text-blue-400  transition-transform duration-500 group-hover:translate-y-[-80px]">
               Learn More <FaArrowCircleRight className="text-sm" />
             </div>
           </div>

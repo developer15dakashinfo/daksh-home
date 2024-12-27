@@ -4,7 +4,7 @@ const Home6 = () => {
   return (
     <div className="w-full bg-white">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-orange-500 font- text-lg text-center ">
+        <h1 className="text-blue-400 font- text-lg text-center ">
           Achievements
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-black">
@@ -42,7 +42,7 @@ const Home6 = () => {
           </div>
 
           {/* Right Column */}
-          <div className="grid grid-cols-10 sm:grid-cols-4 gap-8 items-start">
+          <div className="grid grid-cols-4 sm:grid-cols-4 gap-8 items-start">
             <img
               src="https://cms.digitalpolygon.com/sites/default/files/styles/wide/public/2022-07/Digital-marketing-banner.jpg?itok=JXkj5WxY"
               alt="Microsoft Gold Partner"

@@ -46,7 +46,7 @@ export default function Home4() {
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="w-full flex-col justify-center items-start gap-8 flex">
                 <div className="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                <h2 className=" text-lg text-orange-500 font- font-manrope leading-normal text-start ">
+                <h2 className=" text-lg text-blue-400 font- font-manrope leading-normal text-start ">
               ABOUT US</h2>
                   <h2 className=" text-4xl font-bold font-manrope leading-normal text-start ">
                   Built Relationships with 12,500+ Happy Clients!</h2>
@@ -55,29 +55,29 @@ export default function Home4() {
                 </div>
                 <div className="w-full lg:justify-center justify-center items-center sm:gap-10 gap-5 inline-flex ">
                   <div className="flex-col justify-start items-start inline-flex ">
-                    <h3 className="text-orange-500 text-4xl font-bold font-manrope leading-normal">33+</h3>
+                    <h3 className="text-blue-400 text-4xl font-bold font-manrope leading-normal">33+</h3>
                     <h6 className="text-white text-base font-normal leading-relaxed">Years of Experience</h6>
                   </div>
                   <div className="flex-col justify-center items-start inline-flex">
-                    <h4 className="text-orange-500 text-4xl font-bold font-manrope leading-normal">125+</h4>
+                    <h4 className="text-blue-400  text-4xl font-bold font-manrope leading-normal">125+</h4>
                     <h6 className="text-white text-base font-normal leading-relaxed">Successful Projects</h6>
                   </div>
                   <div className="flex-col justify-center items-start inline-flex text-center">
-                    <h4 className="text-orange-500 text-4xl font-bold font-manrope leading-normal text-center">52+</h4>
+                    <h4 className="text-blue-400  text-4xl font-bold font-manrope leading-normal text-center">52+</h4>
                     <h6 className="text-white text-base font-normal leading-relaxed">Happy Clients</h6>
                   </div>
                 </div>
                 <div className="w-full lg:justify-center justify-center items-center sm:gap-10 gap-5 inline-flex text-center">
                   <div className="flex-col justify-start items-start inline-flex text-center">
-                    <h3 className="text-orange-500 text-4xl font-bold font-manrope leading-normal text-center">33+</h3>
+                    <h3 className="text-blue-400  text-4xl font-bold font-manrope leading-normal text-center">33+</h3>
                     <h6 className="text-white text-base font-normal leading-relaxed text-center">Years of Experience</h6>
                   </div>
                   <div className="flex-col justify-start items-start inline-flex">
-                    <h4 className="text-orange-500 text-4xl font-bold font-manrope leading-normal">125+</h4>
+                    <h4 className="text-blue-400  text-4xl font-bold font-manrope leading-normal">125+</h4>
                     <h6 className="text-white text-base font-normal leading-relaxed">Successful Projects</h6>
                   </div>
                   <div className="flex-col justify-start items-start inline-flex">
-                    <h4 className="text-orange-500 text-4xl font-bold font-manrope leading-normal">52+</h4>
+                    <h4 className="text-blue-400  text-4xl font-bold font-manrope leading-normal">52+</h4>
                     <h6 className="text-white text-base font-normal leading-relaxed">Happy Clients</h6>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function Home4() {
         </div>
 
 <div className="my-5">
-<h6 className="text-orange-500 text-sm font-medium font-manrope leading-normal text-center ">
+<h6 className="text-blue-400  text-sm font-medium font-manrope leading-normal text-center ">
       WORK-LIFE
       </h6>
       <h1 className="text-4xl text-center">

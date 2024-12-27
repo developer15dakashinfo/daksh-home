@@ -48,7 +48,7 @@ const Home8 = () => {
   return (
     <div className="w-full bg-white pb-20">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-orange-500 font-medium text-lg text-center mt-10">
+        <h1 className="text-blue-400  font-medium text-lg text-center">
         SOLUTIONS FOR ALL
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-black">
@@ -67,7 +67,7 @@ const Home8 = () => {
           >
             <div className="p-8">
               <div className="flex items-center gap-4">
-                <div className="text-2xl text-orange-500">{card.icon}</div>
+                <div className="text-2xl text-blue-400 ">{card.icon}</div>
                 <h3 className="text-xl font-bold text-black">{card.title}</h3>
               </div>
 
@@ -80,7 +80,7 @@ const Home8 = () => {
                       key={listIndex}
                       className="flex items-center gap-2 text-[13px] text-gray-500 py-1 text-justify "
                     >
-                      <IoIosArrowForward className="text-orange-500 text-2xl" />
+                      <IoIosArrowForward className="text-blue-400  text-2xl" />
                       {listItem}
                     </li>
                   ))}

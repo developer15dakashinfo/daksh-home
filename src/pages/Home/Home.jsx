@@ -8,6 +8,9 @@ import Home5 from '../../Componets/Home5/Home5';
 import Home7 from '../../Componets/Home7/home7';
 import Home8 from '../../Componets/Home8/Home8';
 import Home9 from '../../Componets/Home9/Home9';
+import Home10 from '../../Componets/Home10/Home10';
+import Home11 from '../../Componets/home11/Home11';
+import Home12 from '../../Componets/Home12/Home12';
 
 
 
@@ -23,8 +26,9 @@ const Home = () => {
       <Home7/>
      <Home8/>
      <Home9/>
-     
-
+     <Home10/>
+     <Home11/>
+    <Home12/>
     </div>
   );
 };

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className=' py-28'>
-        <div className=' items-center text-center px-80'>
+    <div className=' py-28 px-80'>
+        <div className=' items-center text-center '>
         <h5 className=' text-2xl text-blue-500 '>SERVICES</h5>
         <h1 className=' text-5xl text-black-500 font-semibold leading-tight '>Bridging Innovation & Excellence with Modern Tech Solutions</h1>
         <p className=' text-[22px] text-black-500 '>We develop cutting-edge solutions and transform existing ones through collaborative development that prioritises your success. </p>

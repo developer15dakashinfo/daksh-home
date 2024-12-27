@@ -29,7 +29,7 @@ const HomeBanner = () => {
   ];
 
   return (
-    <section className="w-full bg-black py-14">
+    <section className="w-full bg-black pt-28">
       <div className="row flex flex-col items-center">
         <div className="w-full max-w-xl">
           <ul className="flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12">
@@ -69,46 +69,46 @@ const HomeBanner = () => {
           </ul>
         </div>
 
-        <div className="text-center pt-20 px-4 sm:px-8 lg:px-0">
+        <div className="text-center pt-12 px-4 sm:px-8 lg:px-0">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
             Turning Ideas into
           </h1>
-          <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-500">
+          <span className="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-400">
             Creative Digital Solutions
           </span>
         </div>
 
-        <div className="py-16">
-          <div className="container mx-auto text-center px-4 sm:px-8 lg:px-0">
-            <h2 className="text-white text-2xl sm:text-3xl font-bold mb-10">
-              Key Areas of Our Expertise
-            </h2>
-            <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 place-items-center px-10">
-              {BannerButton.map((item, index) => (
-                <div
-                  key={index}
-                  className="group flex items-center justify-center border-2 border-white text-white rounded-full py-3 px-8 sm:px-8 hover:bg-white hover:scale-105 transition duration-200 ease-in-out"
-                >
-                  <div className="flex items-center space-x-2">
-                    <span className="text-xl sm:text-xl group-hover:text-black">
-                      {item.icon}
-                    </span>
-                    <span className="text-sm sm:text-base lg:text-lg font-medium group-hover:text-black">
-                      {item.title}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="mt-12">
-              <button className="bg-blue-500 text-white text-lg sm:text-xl py-3 px-6 sm:px-8 rounded-lg font-semibold hover:bg-blue-600 transition">
-                Let’s Talk About Your Business →
-              </button>
-            </div>
+  <div className="container mx-auto text-center px-4 sm:px-8 lg:px-0">
+    <h2 className="text-white text-2xl sm:text-3xl font-bold mb-10">
+      Key Areas of Our Expertise
+    </h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 place-items-center px-4 sm:px-8 lg:px-12">
+      {BannerButton.map((item, index) => (
+        <div
+          key={index}
+          className="group flex items-center justify-center border-2 border-white text-white rounded-full py-3 px-4 sm:px-6 lg:px-8 hover:bg-white hover:scale-105 transition duration-200 ease-in-out"
+        >
+          <div className="flex items-center space-x-2">
+            <span className="text-lg sm:text-xl group-hover:text-black">
+              {item.icon}
+            </span>
+            <span className="text-sm sm:text-base lg:text-[17px] font-medium group-hover:text-black">
+              {item.title}
+            </span>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+
+    <div className="mt-12 mb-4">
+      <button className="bg-blue-400 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Let’s Talk About Your Business →
+      </button>
+    </div>
+  </div>
+</div>
+
+      
     </section>
   );
 };

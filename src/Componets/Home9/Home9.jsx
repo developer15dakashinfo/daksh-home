@@ -163,7 +163,7 @@ const Home9 = () => {
 
     <div className="w-full bg-black pb-20">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-orange-500 font-medium text-lg text-center">
+        <h1 className="text-blue-400 font-medium text-lg text-center">
           CASE STUDIES
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-white">
@@ -187,7 +187,7 @@ const Home9 = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/100 via-black/70 to-gray-400 opacity-70"></div>
 
-            <div className="absolute top-6 left-4 flex items-center gap-2 text-orange-500 text-sm font-medium z-10">
+            <div className="absolute top-6 left-4 flex items-center gap-2 text-blue-400 text-sm font-semibold z-10">
               {card.title}
             </div>
             <div className="absolute top-12 left-4 text-sm font-semibold text-white z-10">

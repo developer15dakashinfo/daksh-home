@@ -520,30 +520,31 @@ function Navbar() {
                   </p>
 
                   {menu.dropdown.length > 0 && (
-                    <div className="absolute top-full left-0 hidden group-hover:flex bg-white text-blackp-6 mt-2 rounded-b-lg shadow-lg w-[80vw] h-52">
-                      {menu.dropdown.map((dropdownItem, idx) => (
-                        <div
-                          key={idx}
-                          className="flex-1 border-r last:border-r-0"
-                        >
-                          <h3 className="font-bold text-lg pt-4 px-4 pb-2">
-                            {dropdownItem.heading}
-                          </h3>
-                          <ul className="space-y-2">
-                            {dropdownItem.items.map((item, i) => (
-                              <li key={i}>
-                                <a
-                                  href={item.link}
-                                  className="hover:text-blue-600 text-black no-underline text-[16px]"
-                                >
-                                  {item.label}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
+                   <div className="absolute top-full left-0 hidden group-hover:flex bg-white text-black p-6 mt-2 rounded-b-lg shadow-lg w-[80vw] h-52">
+                   {menu.dropdown.map((dropdownItem, idx) => (
+                     <div
+                       key={idx}
+                       className="flex-1 border-r last:border-r-0"
+                     >
+                       <h3 className="font-bold text-lg pt-4 px-4 pb-2">
+                         {dropdownItem.heading}
+                       </h3>
+                       <ul className="space-y-2">
+                         {dropdownItem.items.map((item, i) => (
+                           <li key={i}>
+                             <a
+                               href={item.link}
+                               className="hover:text-blue-600 text-black no-underline text-[16px]"
+                             >
+                               {item.label}
+                             </a>
+                           </li>
+                         ))}
+                       </ul>
+                     </div>
+                   ))}
+                 </div>
+                 
                   )}
                 </li>
               ))}

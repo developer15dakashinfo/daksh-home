@@ -238,6 +238,9 @@
 import React, { useState } from "react";
 import { IoClose, IoSearch } from "react-icons/io5";
 import logo from "../assets/logo.png";
+import { MdEmail } from "react-icons/md";
+import { AiFillSkype } from "react-icons/ai";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const navbarData = [
   {
@@ -303,6 +306,11 @@ const navbarData = [
 
 function Navbar() {
   const [isSearchActive, setIsSearchActive] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
 
   return (
     <nav className="bg-black border-gray-200 dark:bg-gray-900 sticky top-0 z-50">
@@ -311,25 +319,166 @@ function Navbar() {
           href="https://flowbite.com/"
           className="flex items-center rtl:space-x-reverse"
         ></a>
-        <div className="flex md:order-2 space-x-3 md:space-x-0">
-          <button
-            type="button"
-            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            <span className="text-blue-900">IND</span> (+91) 99999 99999
-          </button>
-          <button
-            type="button"
-            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            <span className="text-blue-900">IND</span> (+91) 99999 99999
-          </button>
-          <button
-            type="button"
-            className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm  text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            <span className="text-blue-900">IND</span> (+91) 99999 99999
-          </button>
+        <div className="flex flex-row items-center gap-4 md:order-2">
+          <div className="text-white border-r border-gray-500 pr-4">
+            <div className="flex flex-row gap-2 text-white items-center relative">
+              <div>
+                <a href="">
+                  {" "}
+                  <FaPhoneAlt className="text-[20px] text-white" />
+                </a>
+              </div>
+              <div>
+                <svg
+                  className="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  onClick={toggleDropdown}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white text-black shadow-lg rounded-b-lg p-4 w-72 z-10">
+                  <div className="font-bold text-blue-600">
+                    For Sales Inquiry
+                  </div>
+                  <ul className="mt-2 space-y-2 px-2">
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black hover:text-blue-500" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-99833-88855</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-92140-01234</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black hover:bg-gray-200 hover:text-blue-500 cursor-pointer" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-92140-01234</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-97729-77271</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-73773-71234</div>
+                      </div>
+                    </li>
+
+                    <li>
+                      {" "}
+                      <div className="flex flex-row gap-2 text-black  items-center ">
+                        <div>
+                          <a href="">
+                            <MdEmail className="text-[20px] text-black" />
+                          </a>
+                        </div>
+                        <div>info@dakshinfo.com</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="flex flex-row gap-2 text-black items-center">
+                        <div>
+                          <a href="">
+                            <AiFillSkype className="text-[20px] text-black" />
+                          </a>
+                        </div>
+                        <div>Skype</div>
+                      </div>
+                    </li>
+                  </ul>
+                  <hr />
+                  <div className="font-bold text-blue-600">
+                    For Sales Inquiry
+                  </div>
+                  <ul className="mt-2 space-y-2 px-2">
+                    <li>
+                      <div className="flex flex-row items-center gap-1 hover:bg-gray-200 hover:text-blue-500 cursor-pointer">
+                        <div>
+                          <a href="">
+                            {" "}
+                            <FaPhoneAlt className="text-[16px] text-black" />
+                          </a>
+                        </div>{" "}
+                        <div>+91-99833-88855</div>
+                      </div>{" "}
+                    </li>
+
+                    <li>
+                      <div className="flex flex-row gap-2 text-black  items-center ">
+                        <div>
+                          <a href="">
+                            <MdEmail className="text-[20px] text-black" />
+                          </a>
+                        </div>
+                        <div>info@dakshinfo.com</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="flex flex-row gap-2 text-white items-center border-r border-gray-500 pr-4 ">
+            <div>
+              <a href="">
+                <MdEmail className="text-[20px] text-white" />
+              </a>
+            </div>
+            <div>info@dakshinfo.com</div>
+          </div>
+          <div className="flex flex-row gap-2 text-white items-center">
+            <div>
+              <a href="">
+                <AiFillSkype className="text-[20px] text-white" />
+              </a>
+            </div>
+            <div>Skype</div>
+          </div>
         </div>
       </div>
 
@@ -371,9 +520,7 @@ function Navbar() {
                   </p>
 
                   {menu.dropdown.length > 0 && (
-                   
-
-                    <div className="absolute hidden group-hover:flex bg-white text-blackp-6 mt-2 rounded-b-lg shadow-lg w-[80vw] h-52">
+                    <div className="absolute top-full left-0 hidden group-hover:flex bg-white text-blackp-6 mt-2 rounded-b-lg shadow-lg w-[80vw] h-52">
                       {menu.dropdown.map((dropdownItem, idx) => (
                         <div
                           key={idx}
@@ -387,7 +534,7 @@ function Navbar() {
                               <li key={i}>
                                 <a
                                   href={item.link}
-                                  className="hover:text-green-600 text-black no-underline text-[16px]"
+                                  className="hover:text-blue-600 text-black no-underline text-[16px]"
                                 >
                                   {item.label}
                                 </a>

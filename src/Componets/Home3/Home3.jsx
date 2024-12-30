@@ -84,7 +84,7 @@ function Home3() {
   return (
     <div>
       <div className="max-w-screen-xl mx-auto p-5 sm:p-6 md:p-16">
-      <h1 className="text-blue-400 font-text-lg text-center  sm:mt-2">
+      <h1 className="text-blue-600 text-lg text-center sm:text-xl md:text-4xl">
       Services
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3">
@@ -107,7 +107,7 @@ function Home3() {
               <div className="absolute top-28 left-4 text-sm font-semibold text-white transition-transform duration-500 group-hover:-translate-y-6">
                 {card.description}
               </div>
-              <div className="absolute bottom-[-30px] left-4 text-lg flex items-center gap-2 text-blue-400 transition-transform duration-500 group-hover:translate-y-[-50px]">
+              <div className="absolute bottom-[-30px] left-4 text-lg flex items-center gap-2 text-blue-600 transition-transform duration-500 group-hover:translate-y-[-50px]">
                 Learn More <FaArrowCircleRight className="text-sm" />
               </div>
             </div>
@@ -120,7 +120,7 @@ function Home3() {
             <p className="text-base text-gray-300">We Build More Than Software.</p>
           </div>
           <div className=" flex justify-center">
-            <button type="button" className="bg-blue-400 flex items-center gap-3 text-white py-3 px-6 font-bold rounded">
+            <button type="button" className="bg-blue-600 flex items-center gap-3 text-white py-3 px-6 font-bold rounded">
             Discuss Your Requirement! <FaArrowRightLong />
             </button>
           </div>

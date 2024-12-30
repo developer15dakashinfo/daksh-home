@@ -4,7 +4,7 @@ const Home6 = () => {
   return (
     <div className="w-full bg-white">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <h1 className="text-blue-400 font-bold text-lg text-center sm:text-xl md:text-2xl">
+        <h1 className="text-blue-600 text-lg text-center sm:text-xl md:text-4xl">
           Achievements
         </h1>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mt-3 text-black">

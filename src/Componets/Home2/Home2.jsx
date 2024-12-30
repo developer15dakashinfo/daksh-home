@@ -35,7 +35,7 @@ export default function Home2() {
       <div className="flex justify-center pb-10 ">
       <h1 className="text-2xl sm:text-3xl font-bold text-center mt-6 sm:mt-20 flex flex-wrap justify-center">
       Partnered with Startups and
-      <span className="text-blue-400 px-2">Fortune 500</span> Companies!
+      <span className="text-blue-600 px-2">Fortune 500</span> Companies!
     </h1>
       </div>
       <div className="glide-09 relative w-full overflow-hidden">

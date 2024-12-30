@@ -69,8 +69,8 @@ const Home5 = ({ id, image }) => {
   return (
     <div className="w-full bg-black">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 ">
-        <h1 className="text-blue-400 font- text-lg text-center">
-          TECHNOLOGIES
+      <h1 className="text-blue-600 text-lg text-center sm:text-xl md:text-4xl">
+          Technology
         </h1>
         <h1 className="text-4xl font-bold text-center mt-3 text-white">
           Our Technology Stack and Platforms
@@ -121,7 +121,7 @@ const Home5 = ({ id, image }) => {
       </div>
 
       <div className="mt-10 items-center justify-center text-center py-5">
-          <button className="border border-white text-white text-lg sm:text-xl py-3 px-8 sm:px-8 rounded-lg font-semibold hover:bg-orange-600 transition">
+          <button className="border border-white text-white text-lg sm:text-xl py-3 px-8 sm:px-8 rounded-lg font-semibold hover:bg-blue-900 transition">
           Book a FREE Consultation  → 
           </button>
         </div>

@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { GrCloudSoftware } from "react-icons/gr";
 import { IoCodeSlash } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
-
+import bannervideo from "../../assets/banner.mp4";
 function Home3() {
   const cards = [
     {
@@ -93,14 +93,19 @@ function Home3() {
             </div>
           ))}
         </div>
-        <div className=" text-white py-5">
-        <div className="container border-2 bg-black border-gray-800 mx-auto py-10 flex flex-col md:flex-row justify-around rounded-xl items-center gap-x-6 gap-y-8">
-          <div className=" text-start  md:text-left">
+        <div className=" text-white py-5 ">
+       
+        <div className="container relative border-gray-800 mx-auto py-10 flex flex-col md:flex-row justify-around rounded-xl items-center gap-x-6 gap-y-8">
+        <video autoPlay loop muted className="absolute rounded-xl top-0 left-0 w-full h-full object-cover">
+                    <source src={bannervideo} type="video/mp4" />
+                  </video>
+          <div className=" text-start  md:text-left relative  z-10">
             <h2 className="text-3xl font-semibold mb- text-white">From Code to Success</h2>
             <p className="text-base text-white">We Build More Than Software.</p>
           </div>
-          <div className=" flex justify-center">
-            <button type="button" className="border-2 border-blue-900 hover:bg-blue-900 hover:text-white text-blue-600 flex items-center gap-3  py-3 px-6 font-bold rounded">
+          <div className=" flex justify-center relative  z-10">
+             
+            <button type="button" className="border-2 bg-white text-blue-600 flex items-center gap-3  py-3 px-6 font-bold rounded">
             Discuss Your Requirement! <FaArrowRightLong />
             </button>
           </div>

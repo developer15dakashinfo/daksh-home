@@ -3,86 +3,66 @@ import { FaArrowCircleRight, FaFileCode } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GrCloudSoftware } from "react-icons/gr";
 import { IoCodeSlash } from "react-icons/io5";
+import { MdCall } from "react-icons/md";
 
 function Home3() {
   const cards = [
     {
-      title: "App Development",
+      title: "Mobile App Development",
       description:
-        "Transforming client needs into software solutions that leverage the latest technologies for exceptional performance and functionality.",
+        "Apps are redefining the way we interact with services and empowering businesses to engage with their customers.",
       image:
-        "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
+        "https://media.istockphoto.com/id/1080277602/photo/these-night-owls-always-work-with-dedication.jpg?s=612x612&w=0&k=20&c=X4BC-h84Aeo_1crQz4JUUbQcd8j-vKWih22Pplh8q-8=",
       icon: <FaFileCode />,
     },
+ 
     {
-      title: "Software Development",
-      description:
-        "Building custom software solutions to streamline processes and drive innovation within your business.",
-      image:
-        "https://bairesdev.mo.cloudinary.net/blog/2023/09/How-Many-Web-Developers-in-the-World-1.jpg?tx=w_1920,q_auto",
-      icon: <GrCloudSoftware />,
-    },
-    {
-      title: "Web Development",
-      description:
-        "Creating cutting-edge websites and web applications that enhance user experience and drive engagement.",
-      image:
-        "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
-      icon: <IoCodeSlash />,
-    },
-    {
-        title: "App Development",
+        title: "Web Designing",
         description:
-          "Transforming client needs into software solutions that leverage the latest technologies for exceptional performance and functionality.",
+          "To make your business stand apart, we provide UX/UI design for web & mobile app that looks appealing and interactive.",
         image:
-          "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
+          "https://media.istockphoto.com/id/1316264191/photo/pensive-man-working-on-laptop-in-office.jpg?s=612x612&w=0&k=20&c=dEU-KCRLPYo3a51Vw6RS8o37155TQw16CV1oIPnhxf8=",
         icon: <FaFileCode />,
       },
       {
-        title: "Software Development",
+        title: "E-Commerce Solutions",
         description:
-          "Building custom software solutions to streamline processes and drive innovation within your business.",
+          "eCommerce web development has indeed become a necessity instead of a means to drive greater traffic.",
         image:
-          "https://bairesdev.mo.cloudinary.net/blog/2023/09/How-Many-Web-Developers-in-the-World-1.jpg?tx=w_1920,q_auto",
+          "https://media.istockphoto.com/id/1441388340/photo/team-of-happy-colleagues-working-on-a-computer-late-in-the-office.jpg?s=612x612&w=0&k=20&c=V4-UlwtK_1w0wl2ti3WH7uhcBWuj_6E2veIJf_Of-wM=",
         icon: <GrCloudSoftware />,
       },
       {
-        title: "Web Development",
+        title: "Voice Call",
         description:
-          "Creating cutting-edge websites and web applications that enhance user experience and drive engagement.",
+          "Make your impact more than words, send pre-recorded messages in your voice and make it more reachable to your valuable profits.",
         image:
-          "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
-        icon: <IoCodeSlash />,
+        "https://i.pinimg.com/736x/46/16/ec/4616ec7634cf3cb3b361dcc59c8fd607.jpg"
+          ,
+        icon: <MdCall />,
       },
       {
-        title: "App Development",
+        title: "Bulk SMS",
         description:
-          "Transforming client needs into software solutions that leverage the latest technologies for exceptional performance and functionality.",
+          "Bulk SMS in India | Bulk SMS Service Provider India - Short Message Service or simply the SMS is a revolution of mobile phone industry.",
         image:
-          "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
+          "https://img.freepik.com/premium-photo/serious-woman-night-business-laptop-planning-research-strategy-dark-startup-office-female-working-overtime-computer-technology-online-website-network-table-analytics_590464-132782.jpg",
         icon: <FaFileCode />,
       },
       {
-        title: "Software Development",
+        title: "SEO Services",
         description:
-          "Building custom software solutions to streamline processes and drive innovation within your business.",
+          "We provide Search Engine Optimization (SEO) services to boost your online presence and connect with more customers.",
         image:
-          "https://bairesdev.mo.cloudinary.net/blog/2023/09/How-Many-Web-Developers-in-the-World-1.jpg?tx=w_1920,q_auto",
+"https://img.freepik.com/premium-photo/wooden-desk-modern-home-office-night-serves-as-platform-displaying-product-des_410516-89963.jpg",
         icon: <GrCloudSoftware />,
       },
-      {
-        title: "Web Development",
-        description:
-          "Creating cutting-edge websites and web applications that enhance user experience and drive engagement.",
-        image:
-          "https://www.optimalvirtualemployee.com/wp-content/uploads/2022/12/Web-Developer-skill.jpg",
-        icon: <IoCodeSlash />,
-      },
+ 
     // Add more cards here
   ];
 
   return (
-    <div>
+   
       <div className="max-w-screen-xl mx-auto p-5 sm:p-6 md:p-16">
       <h1 className="text-blue-600 text-lg text-center sm:text-xl md:text-4xl">
       Services
@@ -93,11 +73,11 @@ function Home3() {
         <h1 className="text-lg  text-center mb-10 mt-4 ">
         We develop cutting-edge solutions and transform existing ones through collaborative development that prioritises your success.
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="rounded-xl overflow-hidden shadow-lg flex flex-col relative group"
+              className=" overflow-hidden shadow-lg flex flex-col relative group"
             >
               <img className="w-full group-hover:blur-sm" src={card.image} alt={card.title} />
               <div className="absolute inset-0 bg-gray-900 bg-opacity-25 group-hover:bg-opacity-50 transition duration-300"></div>
@@ -114,13 +94,13 @@ function Home3() {
           ))}
         </div>
         <div className=" text-white py-5">
-        <div className="container bg-gray-800 mx-auto py-10 flex flex-col md:flex-row justify-around rounded-xl items-center gap-x-6 gap-y-8">
+        <div className="container border-2 bg-black border-gray-800 mx-auto py-10 flex flex-col md:flex-row justify-around rounded-xl items-center gap-x-6 gap-y-8">
           <div className=" text-start  md:text-left">
-            <h2 className="text-3xl font-semibold mb-">From Code to Success</h2>
-            <p className="text-base text-gray-300">We Build More Than Software.</p>
+            <h2 className="text-3xl font-semibold mb- text-white">From Code to Success</h2>
+            <p className="text-base text-white">We Build More Than Software.</p>
           </div>
           <div className=" flex justify-center">
-            <button type="button" className="bg-blue-600 flex items-center gap-3 text-white py-3 px-6 font-bold rounded">
+            <button type="button" className="border-2 border-blue-900 hover:bg-blue-900 hover:text-white text-blue-600 flex items-center gap-3  py-3 px-6 font-bold rounded">
             Discuss Your Requirement! <FaArrowRightLong />
             </button>
           </div>
@@ -129,7 +109,7 @@ function Home3() {
       </div>
 
     
-    </div>
+   
   );
 }
 

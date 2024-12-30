@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="">
       <HomeBanner/>
-      <Home2/>
+      {/* <Home2/> */}
       <Home3/>
       <Home4/>
       <Home6/>

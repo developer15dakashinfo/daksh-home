@@ -192,94 +192,96 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between max-w-screen-xl mx-auto pt-2">
+      <div className="flex items-center justify-between max-w-screen-xl mx-auto pt-2 relative">
         <div>
           <a href="/" className="flex items-center">
             <img src={logo} alt="Logo" className="h-[80px]" />
           </a>
         </div>
 
-        <div className=" hidden md:flex items-center justify-end space-x-6 ">
-          {!isSearchActive ? (
-            <ul className="flex items-center space-x-8 pt-4">
-              {navbarData.map((menu, index) => (
-                <li key={index} className="relative group">
-                  <p
-                    className="text-white cursor-pointer flex items-center"
-                    onClick={() =>
-                      menu.label.type === IoSearch && setIsSearchActive(true)
-                    }
-                  >
-                    {menu.label}
+       
+
+          <div className="hidden md:flex items-center justify-end space-x-6 ">
+            {!isSearchActive ? (
+              <ul className="flex items-center space-x-8">
+                {navbarData.map((menu, index) => (
+                  <li key={index} className="relative group">
+                    <p
+                      className="text-white cursor-pointer flex items-center"
+                      onClick={() =>
+                        menu.label.type === IoSearch && setIsSearchActive(true)
+                      }
+                    >
+                      {menu.label}
+                      {menu.dropdown.length > 0 && (
+                        <svg
+                          className="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      )}
+                    </p>
+
                     {menu.dropdown.length > 0 && (
-                      <svg
-                        className="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 9l-7 7-7-7"
-                        />
-                      </svg>
+                      <div className="absolute left-0 hidden group-hover:flex bg-white text-black mt-2 rounded-b-lg shadow-lg w-screen py-4 z-50">
+                        {menu.dropdown.map((dropdownItem, idx) => (
+                          <div
+                            key={idx}
+                            className="flex-1 border-r last:border-r-0 px-4"
+                          >
+                            <h3 className="font-bold text-lg pb-2">
+                              {dropdownItem.heading}
+                            </h3>
+                            <ul className="space-y-2 px-2">
+                              {dropdownItem.items.map((item, i) => (
+                                <li key={i}>
+                                  <a
+                                    href={item.link}
+                                    className="hover:text-blue-600 text-black no-underline text-[16px]"
+                                  >
+                                    {item.label}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
                     )}
-                  </p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <div className="flex items-center space-x-2">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="px-4 py-2 bg-gray-700 text-white rounded-full focus:outline-none"
+                />
+                <button
+                  className="text-white text-2xl"
+                  onClick={() => setIsSearchActive(false)}
+                >
+                  <IoClose />
+                </button>
+              </div>
+            )}
 
-                  {menu.dropdown.length > 0 && (
-                   <div className="absolute top-full left-0 hidden group-hover:flex bg-white text-black p-6 mt-2 rounded-b-lg shadow-lg w-[80vw] h-52">
-                   {menu.dropdown.map((dropdownItem, idx) => (
-                     <div
-                       key={idx}
-                       className="flex-1 border-r last:border-r-0"
-                     >
-                       <h3 className="font-bold text-lg pt-4 px-4 pb-2">
-                         {dropdownItem.heading}
-                       </h3>
-                       <ul className="space-y-2">
-                         {dropdownItem.items.map((item, i) => (
-                           <li key={i}>
-                             <a
-                               href={item.link}
-                               className="hover:text-blue-600 text-black no-underline text-[16px]"
-                             >
-                               {item.label}
-                             </a>
-                           </li>
-                         ))}
-                       </ul>
-                     </div>
-                   ))}
-                 </div>
-                 
-                  )}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <div className="flex items-center space-x-2">
-              <input
-                type="text"
-                placeholder="Search..."
-                className="px-4 py-2 bg-gray-700 text-white rounded-full focus:outline-none"
-              />
-              <button
-                className="text-white text-2xl"
-                onClick={() => setIsSearchActive(false)}
-              >
-                <IoClose />
-              </button>
-            </div>
-          )}
-
-          <button className="font-semibold text-white bg-blue-900 hover:bg-white hover:text-blue-900 px-6 py-2 rounded-full">
-            Contact Us
-          </button>
+            <button className="font-semibold text-white bg-blue-900 hover:bg-white hover:text-blue-900 px-6 py-2 rounded-full">
+              Contact Us
+            </button>
+          </div>
         </div>
-      </div>
+      
     </nav>
   );
 }

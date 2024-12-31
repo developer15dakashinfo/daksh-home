@@ -39,9 +39,9 @@ export default function Home4() {
           <div className="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
             <div className="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
               <div className="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                <img className=" rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741205.png" alt="about Us image" />
+                <img className=" rounded-xl object-cover" src="https://www.dakshinfo.com/images/welcomeimg1.jpg" alt="about Us image" />
               </div>
-              <img className="sm:ml-0 ml-auto rounded-xl object-cover" src="https://pagedone.io/asset/uploads/1717741215.png" alt="about Us image" />
+              <img className="sm:ml-0 ml-auto rounded-xl object-cover" src="https://www.dakshinfo.com/images/welcomeimg4.jpg" alt="about Us image" />
             </div>
             <div className="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
               <div className="w-full flex-col justify-center items-start gap-8 flex">
